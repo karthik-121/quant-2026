@@ -11,3 +11,13 @@ def taylor_approx_2(f,x,x0):
     first_der = numerical_derivative(f,x0)
     second_der = second_derivative(f, x0)
     return f(x0) + (first_der * (x-x0)) + (0.5 * second_der * ((x-x0)**2))
+
+def numerical_integral(f,a,b,N=10):
+    height = (b-a)/N
+    integral = 0
+    for i in range(N):
+        b1 = a+ i*height
+        b2 = b1+height
+        integral += ((height/2) * (f(b1) + f(b2)))
+    print(N)
+    return integral
