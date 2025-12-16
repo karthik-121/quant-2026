@@ -9,4 +9,5 @@ Week 1 progress:
 - added numerical approximation formulas for first, second, third derivative
 - plotted for matplotlib familiarity
 - discovered limitations of finite difference formulas due to truncation/rounding errors
+- Day 3: added numerical integral, new notebook added to test integral approximation
 
